@@ -1852,9 +1852,13 @@ ul.user-states li {
 -----------------------*/
 
 .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    font-size: 30px;
+
+      font-size: 20px;
+      color: yellow;
+      background: #00A950;
+      padding: 5px;
+      border-radius: 5px;
+
 }
 
 .rating span.star, .rating span.star {
@@ -3596,7 +3600,7 @@ ul.p-info {
 ul.p-info li {
     display: inline-block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 ul.p-info li:last-child {

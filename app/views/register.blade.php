@@ -3,7 +3,7 @@
 	<title>Register</title>
 @stop
 @section('login_text')
-    <p style="padding-top:5px;">Create New Account</p>
+      <p><span class="pen-icon">Please Login To Your Account</span></p>
 @stop
 @section('content')
     <div class="form-signin-heading text-center">

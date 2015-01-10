@@ -36,7 +36,7 @@
 </div>
 <div class="login-status">
      @section('login_text')
-      <p style="padding-top:5px;">Please Login To Your Account</p>
+      <p><span class="key-icon">Please Login To Your Account</span></p>
      @show
 </div>
 <div class="container login-page-block">

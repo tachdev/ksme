@@ -1,5 +1,6 @@
 @extends('layout_auth')
 
+
 @section('content')
     <div class="form-signin-heading text-center">
             <img src="assets/images/login_logo.png" alt=""/>
@@ -7,7 +8,9 @@
     <form class="form-signin" action="index.html">
 
         <div class="login-wrap">
-            <div class="col-xs-12 no-padding"><a style="display:block;widht:50px;padding: 0px 15px;" class="btn btn-xs btn-success pull-right" href="<?php echo url('register'); ?>">Create New Account</a></div>
+            <div class="col-xs-12 no-padding">
+                <a style="display:block;widht:50px;padding: 0px 15px;" class="btn btn-xs btn-success pull-right user-plus-icon" href="<?php echo url('register'); ?>">Create New Account</a>
+            </div>
             <label>User Login</label>
             <input type="text" class="form-control" placeholder="" autofocus>
             <label>Password</label>
