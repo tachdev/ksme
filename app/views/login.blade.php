@@ -2,9 +2,10 @@
 
 
 @section('content')
-    <div class="form-signin-heading text-center">
-            <img src="assets/images/login_logo.png" alt=""/>
-    </div>
+<div class="form-signin-heading text-center">
+        <img src="assets/images/login_logo.png" alt=""/>
+</div>
+
     <form class="form-signin" action="index.html">
 
         <div class="login-wrap">
@@ -49,7 +50,8 @@
                 </div>
             </div>
             <!-- modal -->
-
+        </div>
     </form>
+
 
 @stop

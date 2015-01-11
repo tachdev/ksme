@@ -61,10 +61,10 @@ a:hover,a:focus{text-decoration: none;}
 }
 .s-form{border-radius: 5px 0px 0px 5px;}
 
-.wrapper{padding: 10px;}
-.right-side{padding:0px 10px;}
+.wrapper{padding: 6px 4px;}
+.right-side{padding:0px 4px;}
 .contact.right-side{padding:0;}
-.panel{border-radius: 0;margin-bottom: 10px;}
+.panel{border-radius: 0;margin-bottom: 5px;}
 .panel-heading{
 	
 	border-top-right-radius: 0px;
@@ -145,6 +145,7 @@ ul.small-tab-icon li span{padding-top:30px;}
 	color: #fff;
 }
 .login-page-block{margin-top:0%;}
+.login-footer{bottom:0;padding:30px 0px;background:#00A950;width:100%;text-align:center; }
 
 .hash-select{height: 100px;background: #D3D3D3;padding:5px;overflow-y:scroll;}
 .tag-space{margin-bottom: 3px;background: none;border:none;color:#000;}

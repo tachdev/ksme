@@ -43,7 +43,9 @@
     	 @yield('content')
 </div>
 
-
+<div class="login-footer">
+      <img src="assets/images/sponsor.png" alt=""/>
+</div>
 <!--common scripts for all pages-->
 <script src="<?php echo asset('assets/js/jquery/jquery-1.10.2.min.js') ?>"></script>
 <script src="<?php echo asset('assets/js/bootstrap.min.js') ?>"></script>

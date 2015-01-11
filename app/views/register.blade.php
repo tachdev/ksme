@@ -23,5 +23,6 @@
             <label>Code</label>
             <input type="password" class="form-control" placeholder="">          
             <button class="btn btn-md btn-primary btn-block" type="submit">Create Account</button>
+        </div>
     </form>
  @stop
