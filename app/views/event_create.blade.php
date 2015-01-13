@@ -15,7 +15,7 @@
 <div class="col-lg-12 col-xs-12 no-padding">
       	<section class="panel" style="background:none;">
             <header class="panel-heading">
-                Create Events
+                <strong>Create Events</strong>
             </header>
             <div class="panel-body">
                 <form class="form-horizontal col-lg-12 col-xs-12 create-event no-padding" role="form">

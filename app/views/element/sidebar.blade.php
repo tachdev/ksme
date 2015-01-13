@@ -53,7 +53,8 @@
                         <li><a href="<?php echo url('group'); ?>"> Group 3</a></li>
                     </ul>
                 </li>
-                <li class="border-bottom"><a href="<?php echo url('directory'); ?>"><span class="club-icon">Ksme Club</span></a></li>
+                <li class="border-bottom"><a href="<?php echo url('directory'); ?>"><span class="profile-icon">Ksme Network</span></a></li>
+                <li class="border-bottom"><a href="<?php echo url('directory'); ?>"><span class="profile-icon">Ksme Club</span></a></li>
                 <li class="border-bottom"><a href="<?php echo url('group_list'); ?>"><span class="hand-icon">Business</span></a></li>
                 <li class="border-bottom"><a href="<?php echo url('event_list'); ?>"><span class="calendar-icon">Event</span></a></li>
                 <li class="border-bottom"><a href="<?php echo url('contact'); ?>"><span class="contact-icon">Contact</span></a></li>

@@ -50,8 +50,8 @@
         <!--body wrapper end-->
 
         <!--footer section start-->
-        <footer class="sticky-footer">
-            2014 &copy; Kasikornbank
+        <footer class="sticky-footer footer-ksme">
+            <img src="assets/images/sponsor.png" class="image-footer">
         </footer>
         <!--footer section end-->
 

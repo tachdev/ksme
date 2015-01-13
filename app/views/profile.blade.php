@@ -6,7 +6,7 @@
 
 		<div class="panel col-lg-12 no-padding">
 			  	<header class="panel-heading bg-green">
-			  		<h5><strong><a class="btn btn-danger mg-r-sm" href="<?php echo url('profile_user'); ?>">My Profile</a></strong><strong><a class="btn btn-primary" href="<?php echo url('profile'); ?>">My Business</a></strong> </h5>
+			  		<h5><a href="<?php echo url('profile_user'); ?>" style="color:yellow"><strong>My Profile</strong></a> | <a href="<?php echo url('profile'); ?>" style="color:#fff;"><strong>My Business</strong></a> </h5>
 			  	</header>
 			  	<div class="panel-body col-lg-4" style="text-align:center;">
 			  		<div class="avatar"><img src="assets/images/company/2.png" class="avatar-lg avatar-circle" alt=""></div>
@@ -14,16 +14,16 @@
 			            <a href="#"><strong>Business Name</strong></a>			            
 			        </h5>
 			        <p class="rating">
-                                  <span class="star"></span>
-                                  <span class="star"></span>
-                                  <span class="star"></span>
-                                  <span class="star"></span>
-                                  <span class="star"></span>
+			        	 <i style="font-size:12px;color:#fff;font-style:normal;">Rating : </i>
+			        	 <?php for ($i=1; $i <= 5 ; $i++) { ?>
+			        	 	<i class="fa fa-star"></i>
+			        	 <?php } ?>                         
                   	</p>
 			  	</div>
 	        	<div class="panel-body no-padding col-lg-8">
 				    <div class="item active">
 				    	<div class="panel-body">
+				    		<div class="btn btn-xs btn-success btn-round mg-b-sm">Info</div>
 	                        <ul class="p-info">
 	                            <li>
 	                                <div class="title">Name</div>
@@ -56,7 +56,7 @@
 		<div class="col-lg-12 no-padding">
 			  	<div class="panel">
 			  		<header class="panel-heading">
-			  			<h5><strong>Contact</strong></h5>
+			  			<div class="btn btn-xs btn-success btn-round mg-b-sm">Contact</div>
 			  		</header>
 		        	<div class="panel-body no-padding">
 					    	<div class="panel-body col-lg-6">
@@ -77,15 +77,27 @@
 		                                <div class="title">Website</div>
 		                                <div class="desk">www.kme.com</div>
 		                            </li>
-		                        </ul>
-		                        <p class="text-muted mg-t-md" style="font-size:20px;">
-						            <a href="#"><i class="fa fa-envelope"></i></a>
-						            <a href="#"><i class="fa fa-facebook-square"></i></a>
-						            <a href="#"><i class="fa fa-instagram"></i></a>
-						            <a href="#"><i class="fa fa-twitter"></i></a>
-						            <a href="#"><i class="fa fa-pinterest-square"></i></a>
-						        </p>
-		                        
+		                            <li>
+		                                <div class="title"><i class="fa fa-envelope font-large font-color-green"></i></div>
+		                                <div class="desk">Ark For More Info</div>
+		                            </li>
+		                            <li>
+		                                <div class="title"><i class="fa fa-facebook-square font-large font-color-green"></i></div>
+		                                <div class="desk">Forddy.Ford</div>
+		                            </li>
+		                            <li>
+		                                <div class="title"><i class="fa fa-instagram font-large font-color-green"></i></div>
+		                                <div class="desk">Forddy.Intra</div>
+		                            </li>
+		                            <li>
+		                                <div class="title"><i class="fa fa-twitter font-large font-color-green"></i></div>
+		                                <div class="desk">Forddy.Twitter</div>
+		                            </li>
+		                            <li>
+		                                <div class="title"><i class="fa fa-pinterest-square font-large font-color-green"></i></div>
+		                                <div class="desk">Forddy.Pinterest</div>
+		                            </li>
+		                        </ul>		                        
 		                    </div>
 		                    <div class="panel-body col-lg-6">
 			        			<div class="location-map">
@@ -98,7 +110,7 @@
 			<div class="col-lg-12 no-padding">					
 	        	<div class="panel col-lg-12 no-padding">
 	        		<header class="panel-heading">
-			  			<h5><strong>Our Product</strong></h5>
+			  			<div class="btn btn-xs btn-success btn-round mg-b-sm">Our Product</div>
 			  		</header>
 	        		<?php for ($i=1; $i <= 4 ; $i++) { ?>
 		        	<div class="panel-body col-lg-3">
@@ -115,63 +127,8 @@
 </div>
 <!--right side-->
 <div class="col-md-4 right-side">
-      	<div class="panel">
-			<header class="panel-heading"><i class="fa fa-pencil"></i>   Review</header>
-		    <div class="panel-body">
-		    	
-		       	<form  role="form">
-		       		<div class="media">
-		                <div class="media-body">
-		                    <h5 class="media-heading"><a href="#"><strong>Give Rating</strong></a></h5>
-		                    <p>
-		                    	<span class="rating" style="font-size:15px">
-	                              <span class="star"></span>
-	                              <span class="star"></span>
-	                              <span class="star"></span>
-	                              <span class="star"></span>
-	                              <span class="star"></span>
-	                  			</span>
-	                  		</p>
-		                </div>
-	            	</div>
-		       		<a href="#" class="pull-left">
-	                    	<img alt="" src="assets/images/photos/user1.png" class="avatar avatar-xs avatar-circle">
-                	</a>
-                    <div class="form-group" style="overflow:hidden">                    	
-	                	<div class="col-lg-12">
-                        	<textarea class="form-control mg-b-sm"  placeholder="Review Business"></textarea>                     	
-                    	</div>
-                    </div>
-                    
-            	</form>
-		    </div>
-		    <?php for ($i=1; $i <=4 ; $i++) { ?>
-		    <div class="panel-body" style="padding-top:0;">
-			    <div class="media">
-	                <a href="#" class="pull-left">
-	                    <img alt="" src="assets/images/photos/user<?php echo $i; ?>.png" class="avatar avatar-xs avatar-circle">
-	                </a>
-	                <div class="media-body">
-	                	<p>
-	                    	<span class="rating" style="font-size:15px">
-	                          <span class="star"></span>
-	                          <span class="star"></span>
-	                          <span class="star"></span>
-	                          <span class="star"></span>
-	                          <span class="star"></span>
-	              			</span>
-	              		</p>
-	                    <h5 class="media-heading"><a href="#"><strong>Myname Sample <?php echo $i; ?></strong></a></h5>	                    	                    
-	                    <p class="font-normal">
-	                        Donec id elit non mi porta gravida at eget metus amet int
-	                    </p>
-	                    <small class="font-small"><i class="fa fa-clock-o"></i>  December 11,2014  3:31pm</small>
-	                </div>
-	        	</div>
-       		 </div>
-       		 <?php } ?>
-
-		</div>
+     
+     @include('element.profile_review')
 	    
 </div>
 @stop

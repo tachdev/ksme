@@ -32,6 +32,7 @@ a:hover,a:focus{text-decoration: none;}
 
 /*bg color*/
 .bg-grey{background: #9a9a9a;color:#fff;}
+.bg-greyhard{background: #666;color:#fff;}
 .bg-greylight{background: #f3f3f3;color:#666;}
 .bg-green{background:#00A950;color:#fff;}
 .bg-red{background:#DA4F4F;color:#fff;}
@@ -61,7 +62,7 @@ a:hover,a:focus{text-decoration: none;}
 }
 .s-form{border-radius: 5px 0px 0px 5px;}
 
-.wrapper{padding: 6px 4px;}
+.wrapper{padding: 6px 4px;min-height: 900px;}
 .right-side{padding:0px 4px;}
 .contact.right-side{padding:0;}
 .panel{border-radius: 0;margin-bottom: 5px;}
@@ -116,9 +117,11 @@ border-color: red;
 .comment-icon{background:url('../images/icon/comment_icon.png') no-repeat left center;}
 .profile-icon{background:url('../images/icon/user_icon.png') no-repeat -5px 8px;}
 .business-icon{background:url('../images/icon/business.png') no-repeat  -5px 8px;}
-.club-icon{background:url('../images/icon/home.png') no-repeat  -5px 8px;}
+.club-icon{background:url('../images/icon/home.png') no-repeat  0px 7px;}
+.network-icon{background:url('../images/icon/network.png') no-repeat  -3px 8px;}
 .hand-icon{background:url('../images/icon/hand_icon.png') no-repeat  -0px 8px;}
 .calendar-icon{background:url('../images/icon/calendar.png') no-repeat  -3px 8px;}
+.calendar-event-icon{background:url('../images/icon/event_carlendar.png') no-repeat  0px 8px;padding-top:4px;padding-left:40px;}
 .contact-icon{background:url('../images/icon/contact.png') no-repeat  -3px 8px;}
 .message-icon{background:url('../images/icon/message_icon.png') no-repeat  -3px 8px;}
 .message-modal{padding:0!important;}
@@ -150,6 +153,7 @@ ul.small-tab-icon li span{padding-top:30px;}
 .hash-select{height: 100px;background: #D3D3D3;padding:5px;overflow-y:scroll;}
 .tag-space{margin-bottom: 3px;background: none;border:none;color:#000;}
 .tag-feed-body{display: none;}
+.activity-feed{padding:8px;}
 
 ul.goal-progress.rank li {
 	display: inline-block;
@@ -174,6 +178,7 @@ ul.goal-progress.rank li .prog-avatar {
 	float: left;
 	margin-right: 5px;
 }
+.footer-ksme{text-align: center;}
 
 
 .DocumentList {

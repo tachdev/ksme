@@ -5,7 +5,7 @@
 <div class="col-md-8 col-xs-12 no-padding" >
 
     	<div class="panel">
-			<div class="panel-body">			    
+			<div class="panel-body activity-feed">			    
 			    <div class="item active col-lg-12 no-padding mg-b-sm">
 			        <img src="assets/images/blog/image2.jpg" class="img-responsive col-lg-12 no-padding image-border-sm" alt="Responsive image">
 			        <img src="assets/images/blog/image2.jpg" class="img-responsive col-lg-2 no-padding image-border-sm img-mobile-half" alt="Responsive image">
@@ -22,7 +22,7 @@
 				    	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
 				    	when an unknown printer took a galley of type and scrambled it 
 				    </p>
-				    <p><strong>Post BY</strong> : John Doe</p>                         
+				    <p><strong>Post BY</strong> : <i class="fa fa-user font-green"></i>   John Doe</p>                         
 				    <p><strong>Date</strong> : 13/12/11</p>                         
 				    <p class="auth-row mg-t-sm feed-box">
 				       <a href="#" class="btn btn-success font-white"><i class="fa fa-thumbs-o-up mg-r-xs"></i>  LIKE</a>   |   <a href="#" >COMMENT</a>   | <a href="#">SHARE</a>

@@ -1073,8 +1073,8 @@ h5.left-nav-title {
 }
 
 .tools a {
-    background: #E3E4E8;
-    border-radius: 3px;
+    /*background: #E3E4E8;
+    border-radius: 3px;*/
     -webkit-border-radius: 3px;
     color: #858582;
     float: left;
@@ -1084,8 +1084,8 @@ h5.left-nav-title {
 }
 
 .tools a:hover {
-    background: #65cea7;
-    color: #fff;
+    /*background: #65cea7;
+    color: #fff;*/
 }
 
 /*--------------------------------

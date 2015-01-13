@@ -62,7 +62,8 @@
                             <div class="form-group">
                                 <label class="col-lg-3 col-sm-3 control-label"></label>
                                 <div class="col-lg-9 send-message-btn">
-                                        <button class="btn btn-danger" type="button">Send Message</button>
+                                        <button class="btn btn-success" type="button">Send Message</button>
+                                        <button class="btn btn-default" type="button">Cancel</button>
                                 </div>
                             </div>
                             
@@ -71,24 +72,40 @@
             </section>
             <section class="panel bg-greylight" style="height:280px;">
                     <header class="panel-heading bg-green">
-                        Contact Us
+                            Contact Us
                     </header>
-                    <div class="panel-body">
-                        <p>Contact Administrator</p>
-                        <p>Twelve Begin Co,ltd</p>
-                        <p>Tel 02 615 1100</p>
-                        <p>Email admin@ksmeclub.com</p>
-                        <div class="activity-desk">
-                        <p class="text-muted " style="font-size:20px;">
-                            <a href="#"><i class="fa fa-envelope"></i></a>
-                            <a href="#"><i class="fa fa-facebook-square"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest-square"></i></a>
-                        </p>
+                    <div class="col-lg-6" style="border-right:3px solid #00A950">                        
+                        <div class="panel-body">
+                            <p class="font-color-green"><strong>Contact Administrator</strong></p>
+                            <p class="font-color-green"><strong>Twelve Begin Co,ltd</strong></p>
+                            <p>Tel 02 615 1100</p>
+                            <p>Email admin@ksmeclub.com</p>
+                            <div class="activity-desk">
+                            <p class="text-muted " style="font-size:20px;">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                            </p>
 
-                        </div>      
-                     </div>
+                            </div>      
+                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                         <div class="panel-body">
+                            <p class="font-color-green"><strong>Kasikornbank</strong></p> 
+                            <div class="activity-desk">
+                            <p class="text-muted " style="font-size:20px;">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                            </p>
+                            </div>  
+                         </div>                       
+                    </div>
             </section>
         
 </div>

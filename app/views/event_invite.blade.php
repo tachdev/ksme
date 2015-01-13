@@ -5,9 +5,9 @@
 <div class="col-md-6 col-xs-12 no-padding" >
 		<div class="panel hidden-lg" style="display:block;background:none;box-shadow:none;">
 			<div class="panel-body no-padding">
-			<a href="<?php echo url('create_event'); ?>" class="btn btn-warning col-lg-3 mg-r-sm">Create Event</a>
-            <a href="<?php echo url('create_event'); ?>"  class="btn btn-success col-lg-3  pull-right" >Join Event</a>
-            <a href="<?php echo url('create_event'); ?>"  class="btn btn-danger col-lg-3 mg-r-sm pull-right">Maybe</a>
+			<a href="<?php echo url('create_event'); ?>"  class="btn btn-warning col-lg-3 mg-r-sm">Create Event</a>
+            <a href="<?php echo url('create_event'); ?>"  class="btn btn-success col-lg-3  pull-right" >Join </a>
+            <a href="<?php echo url('create_event'); ?>"  class="btn btn-default col-lg-3 mg-r-sm pull-right">Maybe</a>
         	</div>
 		</div>
         <div class="panel">
@@ -37,30 +37,46 @@
 			</div>
 		</div>
 		<div class="col-lg-12 no-padding">
-			  	<div class="panel">
-			  		<header class="panel-heading">
-			  			<h5><strong>Location</strong></h5>
-			  		</header>
-		        	<div class="panel-body no-padding">
-		                    <div class="panel-body col-lg-12">
-			        			<div class="location-map">
-			                        <div id="map-canvas" class="border-sm"></div>
-			                    </div>
-			        		</div>                           			   
-					</div>
+			  <div class="panel">
+		  		<header class="panel-heading">
+		  			<h5><strong>Location</strong></h5>
+		  		</header>
+	        	<div class="panel-body no-padding">
+	                    <div class="panel-body col-lg-12">
+		        			<div class="location-map">
+		                        <div id="map-canvas" class="border-sm"></div>
+		                    </div>
+		        		</div>                           			   
+				</div>
 
-        	  </div>
-        	 
+        	 </div>
+        	 <div class="panel">
+		  		<header class="panel-heading bg-green">
+		  			<h5><strong>Attachment</strong></h5>
+		  		</header>
+	        	<div class="panel-body no-padding">
+                    <div class="panel-body col-lg-12">
+	        			<img src="assets/images/icon/doc_red_icon.png">
+	        			<img src="assets/images/icon/doc_icon.png">
+	        			<img src="assets/images/icon/doc_blue_icon.png">
+	        		</div>                           			   
+				</div>
+
+        	 </div>        	 
 		</div>
 </div>
 <!--right side-->
 <div class="col-md-6 col-xs-12 right-side">
 
 		<div class="panel hidden-xs" style="display:block;background:none;box-shadow:none;">
+			<div class="panel-body no-padding mg-b-sm">
+				<a href="<?php echo url('create_event'); ?>" class="btn btn-danger btn-xs col-lg-3 pull-right btn-round">Create Event <i class="fa fa-plus"></i></a>
+
+        	</div>
 			<div class="panel-body no-padding">
-			<a href="<?php echo url('create_event'); ?>" class="btn btn-warning col-lg-3 mg-r-sm">Create Event</a>
-            <a href="<?php echo url('create_event'); ?>"  class="btn btn-success col-lg-3  pull-right" >Join Event</a>
-            <a href="<?php echo url('create_event'); ?>"  class="btn btn-danger col-lg-3 mg-r-sm pull-right">Maybe</a>
+            	<a href="<?php echo url('create_event'); ?>"  class="btn btn-default col-lg-3 pull-right">Maybe</a>
+            	<a href="<?php echo url('create_event'); ?>"  class="btn btn-success col-lg-3 pull-right mg-r-sm" >Join</a>
+
         	</div>
 		</div>
 		<div class="panel">
@@ -91,10 +107,10 @@
 		    </div>
 		</div>
       	<div class="panel">
-			<header class="panel-heading">
+			<header class="panel-heading bg-green">
 				Joined
 				<span class="tools pull-right">
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                        <a href="javascript:;" class="fa fa-chevron-down" style="color:#fff;"></a>
                  </span>
 			</header>
 		    <div class="panel-body">
@@ -107,11 +123,9 @@
 		    </div>
 		</div>
 		<div class="panel">
-			<header class="panel-heading">
+			<header class="panel-heading bg-green">
 				Maybe
-				<span class="tools pull-right">
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                 </span>
+				<span class="tools pull-right"><a href="javascript:;" class="fa fa-chevron-down" style="color:#fff;"></a></span>
 			</header>
 		    <div class="panel-body">
 		    	<?php for ($i=1; $i <= 4 ; $i++) { ?>
@@ -139,27 +153,31 @@
 					    </form>
                        			   
 					</div>
-					<div class="panel-body">
-					    <div class="media" style="font-size:13px;">
-					        <a href="#" class="pull-left">
-					            <img alt="" src="assets/images/blog/blog-avatar-2.jpg" class="avatar-xs avatar-circle">
-					        </a>
-					        <div class="media-body">
-					            <p class="media-heading">
-					                <a href="#" class="mg-r-sm"><strong>Devid Beckham</strong></a>  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit.
-					            </p>
-					            <div class="bl-status">
-					                <div class="bl-status">
-				                		<span class="pull-left">About 10 Min ago&nbsp;</span>
-				                		<span class="pull-left">&nbsp;<a href="#">Like</a>&nbsp;</span>
-				                		<span>&nbsp;<i class="fa fa-thumbs-o-up mg-r-xs"></i>&nbsp;1</span>
-				            		</div>
-					            </div>
-					        </div>
-					    </div>
-					   
-					</div>
+					<?php for ($i=0; $i < 2 ; $i++) { ?>
 
+						<div class="panel-body">
+						    <div class="media" style="font-size:13px;">
+						        <a href="#" class="pull-left">
+						            <img alt="" src="assets/images/blog/blog-avatar-2.jpg" class="avatar-xs avatar-circle">
+						        </a>
+						        <div class="media-body">
+						            <p class="media-heading">
+						                <a href="#" class="mg-r-sm"><strong>Devid Beckham</strong></a>  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit.
+						            </p>
+						            <div class="bl-status">
+						                <div class="bl-status">
+					                		<span class="pull-left">About 10 Min ago&nbsp;</span>
+					                		<span class="pull-left">&nbsp;<a href="#">Like</a>&nbsp;</span>
+					                		<span>&nbsp;<i class="fa fa-thumbs-o-up mg-r-xs"></i>&nbsp;1</span>
+					            		</div>
+						            </div>
+						        </div>
+						    </div>
+						   
+						</div>
+
+					<?php } ?>
+				
         	  </div>  
 </div>
 @stop
