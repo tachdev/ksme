@@ -75,6 +75,7 @@ a:hover,a:focus{text-decoration: none;}
 }
 .btn-success{color: #fff;background-color: #00a850;border-color: #00a850;}
 .btn{ padding:3px 12px;}
+.fileinput-remove,.btn-file,.fileinput-cancel{padding:6px 12px!important;}
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
 color: #fff;
 background-color: red;
@@ -154,6 +155,20 @@ ul.small-tab-icon li span{padding-top:30px;}
 .tag-space{margin-bottom: 3px;background: none;border:none;color:#000;}
 .tag-feed-body{display: none;}
 .activity-feed{padding:8px;}
+.event-textarea{width:85%;height:200px!important;}
+.input-file-button{
+
+	  width: 100%;
+	  height: 200px;
+	  background: #ECF0EB;
+	  display: block;
+	  border-radius: 5px;
+	  border: 1px solid #ccc;
+	  text-align: center;
+	  cursor: pointer;
+}
+.photo-plus{font-size:50px;padding:30px;border:1px solid #ccc;width: 90%;background: #f2f2f2;border-radius: 15px;}
+
 
 ul.goal-progress.rank li {
 	display: inline-block;
@@ -188,6 +203,8 @@ ul.goal-progress.rank li .prog-avatar {
     height:220px;
     padding: 0 15px;
 }
+
+
 
 
 /* slider */

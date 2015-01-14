@@ -2,11 +2,9 @@
 
 @section('script_top')
 
-<link href="<?php echo asset('assets/css/bootstrap-fileupload.min.css') ?>" rel="stylesheet">
 <link href="<?php echo asset('assets/css/datepicker-custom.css') ?>" rel="stylesheet">
 <link href="<?php echo asset('assets/css/daterangepicker-bs3.css') ?>" rel="stylesheet">
-<link href="<?php echo asset('assets/js/dropzone/css/dropzone.css') ?>" rel="stylesheet">
-
+<link href="<?php echo asset('assets/css/fileinput.min.css') ?>" rel="stylesheet">
 
 @stop
 
@@ -16,93 +14,82 @@
       	<section class="panel" style="background:none;">
             <header class="panel-heading">
                 <strong>Create Events</strong>
+                <button class="btn btn-danger pull-right btn-round" type="button">Create Event</button>
             </header>
             <div class="panel-body">
-                <form class="form-horizontal col-lg-12 col-xs-12 create-event no-padding" role="form">
+                <form class="create-event no-padding" role="form">
                     <div class="col-lg-12 col-xs-12 no-padding">
-                        <div class="form-group col-lg-6 col-xs-12">
-                                <label class="col-lg-2 col-sm-3 control-label"><strong>Topic:</strong></label>
-                                <div class="col-lg-10 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group col-lg-6 col-xs-12 no-padding">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Topic:</strong></span>
+                                <span><input type="text" class="form-control pull-left" placeholder="Topic" style="width:70%;"></span>
                         </div>
-                        <div class="form-group col-lg-6 col-xs-12">
-                                <label class="col-lg-2 col-sm-3 control-label"><strong>Date:</strong></label>
-                                <div class="col-lg-10 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic" style="width:100%;">
-                                </div>
+                        <div class="form-group col-lg-6 col-xs-12 no-padding">
+                                <span style="width:20%;" class="pull-left mg-t-xs"><strong>Date:</strong></span>
+                                <span><input type="text" class="form-control pull-right default-date-picker" placeholder="Date" style="width:75%;"></span>
+                                <span class="help-block"></span>
                         </div>
                     </div>
                     <div class="col-lg-12 col-xs-12 no-padding">
-                        <div class="form-group col-lg-4 col-xs-12">
-                                <label class="col-lg-3 col-sm-3 control-label"><strong>Start:</strong></label>
-                                <div class="col-lg-9 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group col-lg-4 col-xs-12 no-padding">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Start Time:</strong></span>
+                                <span><input type="text" class="form-control pull-left mg-r-sm" placeholder="Start Time : ex.17.00 น.  " style="width:60%;"></span>
                         </div>
-                        <div class="form-group col-lg-4 col-xs-12">
-                                <label class="col-lg-3 col-sm-3 control-label"><strong>End:</strong></label>
-                                <div class="col-lg-9 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group col-lg-4 col-xs-12 no-padding">
+                                <span style="width:20%;" class="pull-left mg-t-xs"><strong>End:</strong></span>
+                                <span><input type="text" class="form-control pull-left mg-r-sm" placeholder="End Time : ex.18.00 น.  " style="width:75%;"></span>
                         </div>
-                        <div class="form-group col-lg-4 col-xs-12" style="margin-right:0;">
-                                <label class="col-lg-4 col-sm-3 col-xs-12 control-label"><strong>Expense:</strong></label>
-                                <div class="col-lg-8 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic" style="padding-right:0;">
-                                </div>
+                        <div class="form-group col-lg-4 col-xs-12 no-padding">
+                                <span style="width:20%;" class="pull-left mg-t-xs"><strong>Expense:</strong></span>
+                                <span><input type="number" class="form-control pull-right"  style="width:75%;" value=""></span>
                         </div>
-                    </div>
+                    </div> 
                     <div class="col-lg-12 col-xs-12 no-padding">
-                        <div class="form-group col-lg-9 col-xs-12">
-                            <label style="width:75px;float:left;" class="control-label col-xs-12"><strong>Details :</strong></label>
-                            <div class="col-lg-10 col-xs-12 col-sm-9">
-                                <textarea rows="6" class="form-control"></textarea>
-                            </div>
+                        <div class="form-group col-lg-8 col-xs-12 no-padding">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Detail:</strong></span>
+                                <span><textarea class="form-control pull-left event-textarea" placeholder="Please Insert Detail"></textarea></span>
+                                
+                        </div>
+                        <div class="form-group col-lg-4 col-xs-12 no-padding">
+                        <span class="input-file-button">
+                            <p class="mg-t-sm"><strong>Browse Photo</strong></p>
+                            <span class="pic-logo"><i class="fa fa-plus photo-plus"></i></span>                           
+                            <p class="mg-t-sm name_file">no image upload</p>
+                        </span>
+                         <input type="file" id="my_file_upload" style="display:none;" />
                         </div>
                     </div>
-             
+
                     <div class="col-lg-6 col-xs-12 no-padding">
-                        <div class="form-group col-lg-12">
-                                <label class="col-lg-2 col-sm-3 control-label"><strong>Location</strong></label>
-                                <div class="col-lg-10 col-xs-12">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group no-padding" style="margin-bottom:15px;overflow:hidden">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Location:</strong></span>
+                                <span><input type="text" class="form-control pull-left" placeholder="Insert Event Location" style="width:75%;"></span>
                         </div>
-                        <div class="form-group col-lg-12">
-                                <label class="col-lg-2 col-sm-3 control-label"><strong>File</strong></label>
-                                <div class="col-lg-10">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group no-padding" style="margin-bottom:15px;overflow:hidden">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Attachment:</strong></span>
+                                <span>
+                                    <div class="form-group" style="width:90%">
+                                        <input id="file-1" class="file" type="file" multiple="true" data-show-upload="false" data-show-preview="false">
+                                    </div>
+                                </span>
                         </div>
-                        <div class="form-group col-lg-12">
-                                <label class="col-lg-2 col-sm-3 control-label"><strong>Invite</strong></label>
-                                <div class="col-lg-10">
-                                        <input type="text" class="form-control" placeholder="Topic">
-                                </div>
+                        <div class="form-group no-padding" style="margin-bottom:15px;overflow:hidden">
+                                <span style="width:100px;" class="pull-left mg-t-xs"><strong>Invite:</strong></span>
+                                <span><input type="text" class="form-control pull-left" placeholder="Topic" style="width:75%;"></span>
                         </div>
                     </div>
-                    <div class="form-group col-lg-6 col-xs-12">
-                        <label class="control-label col-md-1"><strong>Map</strong></label>
-                        <div class="col-lg-9">                            
+                    <div class="form-group col-lg-6 col-xs-12 pull-right no-padding">
+                        <label class="control-label col-md-1 no-padding"><strong>Map</strong></label>
+                        <div class="col-lg-12 no-padding">                            
     						<div id="map-canvas"></div>
                         </div>
                         <input id="pac-input" class="controls form-control" style="width:40%;margin-top:2%;border:2px solid #666;" type="text" placeholder="Insert Location">
                         
                     </div>
-                    
-                    <div class="form-group col-lg-12 col-xs-12">
-                        <label class="control-label col-md-3"></label>
-                        <div class="col-lg-12">                            
-                            <button class="btn btn-danger pull-right" type="button">Create Event</button>
-                            <button class="btn btn-warning pull-right mg-r-sm" type="button">Cancel</button>
-                        </div>
+                    <div class="form-group col-lg-12 col-xs-12 pull-right no-padding">
+                        <button class="btn btn-success col-lg-2 pull-right btn-round" type="button">Post</button>
+                        <button class="btn btn-default col-lg-2 pull-right mg-r-sm btn-round" type="button">Cancel</button>
                     </div>
-
-                        
-
-
-
+                    
                 </form>
             </div>
     	</section>
@@ -116,9 +103,30 @@
    <script src="<?php echo asset('assets/js/bootstrap-datepicker.js') ?>"></script>
    <script src="<?php echo asset('assets/js/daterangepicker.js') ?>"></script>
    <script src="<?php echo asset('assets/js/pickers-init.js') ?>"></script>
-   <script src="<?php echo asset('assets/js/dropzone/dropzone.js') ?>"></script>
+   <script src="<?php echo asset('assets/js/fileinput.js') ?>"></script>
+
    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
    <script>
+
+
+        $(document).ready(function(){
+
+            $("#my_file_upload").change(function(){
+
+                var val = document.getElementById('my_file_upload');
+                var filename = val.value.split(/(\\|\/)/g).pop();
+                $("p.name_file").html(filename);
+                $("span.pic-logo").html('<i class="fa fa-picture-o photo-plus"></i>');
+            });
+        });
+
+        $("span.input-file-button").on("click", function(){
+
+            $("#my_file_upload").click();
+
+        });
+
+    
 
 	function initialize() {
 
