@@ -2,14 +2,9 @@
 
 @section('content')
 <!--center side-->
-
-<div class='panel bg-green'>
-			<div class="panel-body">
-				Search Result :  'My Search'
-			</div>
-		
-</div>
-
+<h4>
+	<a href="#"><strong>Search "Ksme" </strong></a>
+</h4>
 <div class="panel col-lg-12 no-padding" style="border:2px solid #E1E1E2;margin-bottom:10px;display:inline-block">
 		
 		<header class="panel-heading bg-green">

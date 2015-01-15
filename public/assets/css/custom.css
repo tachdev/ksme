@@ -168,6 +168,8 @@ ul.small-tab-icon li span{padding-top:30px;}
 	  cursor: pointer;
 }
 .photo-plus{font-size:50px;padding:30px;border:1px solid #ccc;width: 90%;background: #f2f2f2;border-radius: 15px;}
+.region h5{font-size:14px;}
+.region p{font-size:12px;}
 
 
 ul.goal-progress.rank li {
