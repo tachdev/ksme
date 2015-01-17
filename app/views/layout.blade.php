@@ -51,7 +51,7 @@
 
         <!--footer section start-->
         <footer class="sticky-footer footer-ksme">
-            <img src="assets/images/sponsor.png" class="image-footer">
+            <img src="<?php echo asset('assets/images/sponsor.png'); ?>" class="image-footer">
         </footer>
         <!--footer section end-->
 

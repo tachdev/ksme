@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="form-signin-heading text-center">
-        <img src="assets/images/login_logo.png" alt=""/>
+        <img src="<?php echo asset('assets/images/login_logo.png'); ?>" alt=""/>
 </div>
 
     <form class="form-signin" action="index.html">
