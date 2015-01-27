@@ -20,19 +20,18 @@
 
                     <li class="mg-t-md mg-b-lg">
                         <div class="prog-avatar mg-b-lg">
-                            <div class="rank-star"><?php echo $i; ?></div>                 
-                        </div>
-                        <div class="prog-avatar mg-b-lg ">
                             <img src="assets/images/photos/user1.png" alt="">
                         </div>
                         <div class="details mg-l-md" style="font-size:12px;">
-                            <div class="prog-avatar pull-right score-box">
-                                 <p>50</p>
-                            </div>
-                            <div class="title" style="margin-bottom:0;">
+                            <div class="pull-right">Rank <?php echo $i ?></div>
+                            <div class="title mg-l-md" style="margin-bottom:0;">
                                 <a href="#"><strong>John Doe</strong></a>
-                            </div>
-                            <div style="color:#666"> Donec id elit non mi porta Donec id elit </div>
+                                <div class="progress progress-xs mg-t-md">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $i/0.02 ?>" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
+                                        <span class=""><?php echo $i*10 ?> Score</span>
+                                    </div>
+                                </div>
+                            </div>                        
                             
                         </div>
                         

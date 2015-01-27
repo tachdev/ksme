@@ -36,7 +36,7 @@ a:hover,a:focus{text-decoration: none;}
 .bg-greylight{background: #f3f3f3;color:#666;}
 .bg-green{background:#00A950;color:#fff;}
 .bg-red{background:#DA4F4F;color:#fff;}
-.bg-rank{background:#d2d2d2;color:#fff;}
+.bg-rank{background:#fff;color:#666;}
 
 /*avatar style*/
 .avatar-lg{width:100px;}
@@ -116,10 +116,10 @@ border-color: red;
 .rank-icon{background:url('../images/icon/mini_star.png') no-repeat left center;}
 .hash-icon{background:url('../images/icon/square.png') no-repeat left center;}
 .comment-icon{background:url('../images/icon/comment_icon.png') no-repeat left center;}
-.profile-icon{background:url('../images/icon/user_icon.png') no-repeat -5px 8px;}
-.business-icon{background:url('../images/icon/business.png') no-repeat  -5px 8px;}
+.profile-icon{background:url('../images/icon/user_icon.png') no-repeat 0px 8px;}
+.business-icon{background:url('../images/icon/business.png') no-repeat  0px 8px;}
 .club-icon{background:url('../images/icon/home.png') no-repeat  0px 7px;}
-.network-icon{background:url('../images/icon/network.png') no-repeat  -3px 8px;}
+.network-icon{background:url('../images/icon/network.png') no-repeat  -1px 8px;}
 .hand-icon{background:url('../images/icon/hand_icon.png') no-repeat  -0px 8px;}
 .calendar-icon{background:url('../images/icon/calendar.png') no-repeat  -3px 8px;}
 .calendar-event-icon{background:url('../images/icon/event_carlendar.png') no-repeat  0px 8px;padding-top:4px;padding-left:40px;}
@@ -176,7 +176,7 @@ ul.small-tab-icon li span{padding-top:30px;}
 ul.goal-progress.rank li {
 	display: inline-block;
 	width: 100%;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #F0E9E9;
 	margin-bottom: 0px;
 	padding-bottom: 5px;
 }
@@ -194,7 +194,7 @@ ul.goal-progress.rank li .prog-avatar {
 	width: 40px;
 	height: 40px;
 	float: left;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 .footer-ksme{text-align: center;}
 
